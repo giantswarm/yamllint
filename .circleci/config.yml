@@ -30,7 +30,7 @@ workflows:
       - test:
           context: architect
           requires:
-            - architect/push-to-registries
+            - push-to-registries
           filters:
             # Trigger job also on git tag.
             tags:
