@@ -9,6 +9,7 @@ jobs:
     environment:
       DOCKER_BUILDKIT: '1' # needed to have docker
     steps:
+      - setup_remote_docker
       - checkout # git repo is needed for architect to determine the version
       - run:
           name: Execute yamllint
@@ -34,10 +35,3 @@ workflows:
           context: architect
           requires:
             - push-to-registries
-          filters:
-            # Trigger job also on git tag.
-            tags:
-              only: /^v.*/
-            branches:
-              ignore:
-                - main
