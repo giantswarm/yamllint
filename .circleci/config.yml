@@ -6,8 +6,10 @@ orbs:
 jobs:
   test:
     executor: architect/architect
+    environment:
+      DOCKER_BUILDKIT: '1' # needed to have docker
     steps:
-      - checkout
+      - checkout # git repo is needed for architect to determine the version
       - run:
           name: Execute yamllint
           command: |
