@@ -4,7 +4,7 @@ orbs:
   architect: giantswarm/architect@6.3.2
 
 workflows:
-  test:
+  build:
     jobs:
       - architect/push-to-registries:
           context: architect
