@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0] - 2025-08-15
 
+### Added
 
-[Unreleased]: https://github.com/giantswarm/yamllint/tree/main
+- yamllint v1.37.1
+
+[Unreleased]: https://github.com/giantswarm/yamllint/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/giantswarm/yamllint/releases/tag/v1.0.0
